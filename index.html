@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <div class="pop-up">
+        <h3>Choose mood!</h3>
+        <div class="buttons">
+            <div>
+                <span>6 sec to type a word</span>
+                <button type="button" id="easy">Easy</button>
+            </div>
+            <div>
+                <span>4 sec to type a word</span>
+                <button type="button" id="medium">Medium</button>
+            </div>
+            <div>
+                <span>2 sec to type a word</span>
+                <button type="button" id="hard">Hard</button>
+            </div>
+        </div>
+    </div>
     <header> <h1>WordBreaks</h1>    </header>
     <div class="container">
         <p class="remainder">Type the Given Word Within
@@ -17,14 +34,9 @@
 
         <div class="display">
             <p>Time Left: <span id="time"></span></p>
-            <p>Score: <span id="score"></span></p>
+            <p>Score: <span id="score">0</span></p>
         </div>
         
-        <div class="buttons">
-            <button type="button" id="easy">Easy</button>
-            <button type="button" id="medium">Meduim</button>
-            <button type="button" id="hard">Hard</button>
-        </div>
         <div class="instruction">
             <p class="inst">Instructions:</p>
             <p class="content">Type each word in the given amount of seconds to score.<br/> To play again, just type the current word. Your score will reset.</p>

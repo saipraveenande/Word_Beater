@@ -3,12 +3,11 @@
     padding: 0;
 }
 body{
-    background-color:#777777;
+    background-color:#222;
     color: white;
 }
-
 header{
-    background-color:#444444;
+    background-color:#0A66C2;
     padding: 10px;
     text-align: center;
     letter-spacing: 4px;
@@ -18,27 +17,34 @@ header{
     height: 450px;
     text-align: center;
     margin-top: 20px;
+    
 }
 #seconds{
     font-size: 23px;
+    color:#0A66C2 ;
     font-family: monospace;
 }
 #currentWord{
     letter-spacing: 2px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     margin:10px 0px ;
     font-size: 35px;
 }
 #wordInput{
-    width:30%;
-    height:30px;
-    border: 2px solid darkslategray;
+    width:23%;
+    height:25px;
+    border: 2px solid #0A66C2;
     border-radius: 8px;
     font-size: 17px;
+    outline: none;
     padding:10px;
 }
 #message{
     padding:8px 0px;
+    color: #0A66C2;
+    font-size: 22px;
+    font-weight: 500;
+    height: 25px;
 }
 .display{
     display: flex;
@@ -49,25 +55,21 @@ header{
     width: 300px;
     justify-content: space-between;
 }
-
 #time, #score{
     font-weight: bold;
-}
-#time{
-    color: maroon;
-}
-#score{
-    color: darkslategray;
+    color:#0A66C2
 }
 .instruction{
     width:350px;
     margin:0 auto;
-    background-color: gray;
+    border:1px solid #333;
     border-radius: 8px;
     margin-top:45px;
 }
 .inst{
-    background-color: #555555;
+    background-color: #333;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     padding: 6px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -79,15 +81,38 @@ header{
 }
 button{
     padding:3px 6px;
-    margin:40px 20px;
+    margin-left: 5px;
     width:70px;
     height:30px;
     cursor:pointer;
-    background-color: #666666;
-    border:2px solid #888888;
+    background-color: transparent;
+    border:1px solid #0A66C2;
+    color:#0A66C2;
     border-radius: 50px;
 }
-button.active{
-    background-color: #333333;
-    color:white;
+button:hover{
+    background-color: #0A66C2;
+    color: white;
+    border: 0;
+}
+.pop-up{
+    background-color: rgb(0,0,0,0.9);
+    border: 2px solid black;
+    width: 350px;    
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top:50%;
+    border-radius: 8px;
+}
+.pop-up h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0A66C2;
+}
+.pop-up div{
+    margin: 20px;
 }
