@@ -1,13 +1,14 @@
-window.addEventListener('load', function(){
-    this.setTimeout(function open(event){
-        document.querySelector(".pop-up").style.display="block";
-    }, 1000)
-});
+window.addEventListener('load', funMood);
 
 var levels = {easy:6, medium: 4, hard: 2 }
 var currentLevel;
 var time;
 
+function funMood(){
+    this.setTimeout(function open(event){
+        document.querySelector(".pop-up").style.display="block";
+    }, 1000)
+}
 const buttons = document.querySelectorAll('button');
 buttons.forEach(button =>{
     button.addEventListener('click', ()=>{
@@ -37,7 +38,6 @@ buttons.forEach(button =>{
 
 let score = 0;
 let isPlaying;
-
 const wordInput = document.querySelector("#wordInput");
 const currentWord = document.querySelector("#currentWord");
 const scoreDisplay = document.querySelector("#score");
@@ -49,6 +49,8 @@ const word = ['hat', 'river', 'javascript', 'sai', 'praveen', 'sai praveen', 'lu
     "elephant", "dolphin", "quilt", "watermelon","xylophone", "zebra", "fireworks", "quokka", "jacket", "dog", "octopus", "monkey", "flower",
     "helicopter", "orange", "mountain", "ice cream", "airplane", "notebook", "grape", "tiger", "carrot", "candle", "noodle", "lemon", "umbrella",
     "sunglasses", "apple", "penguin", "zebra", "volcano", "kangaroo", "rabbit", "honey" ];
+
+
 
 function init(){
     wordInput.addEventListener('input', startMatch);
